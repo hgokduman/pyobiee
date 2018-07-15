@@ -1,0 +1,5 @@
+{ 
+    "wsdlURL": "https://xxxxxxx.yyyy:9715/analytics-ws/saw.dll/wsdl/v12", 
+    "username": "xxx", 
+    "password": "xxx"
+}

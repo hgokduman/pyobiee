@@ -15,4 +15,4 @@ setup(name='pyobiee',
       dependency_links=['bitbucket.org/jurko/suds/get/tip.tar.gz#egg=suds'],
       include_package_data=True,
       zip_safe=False,
-	  url='https://gitlab.com/hgokduman/pyOBIEE')
+	  url='https://gitlab.com/hgokduman/pyobiee')

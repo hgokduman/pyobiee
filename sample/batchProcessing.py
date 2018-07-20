@@ -15,9 +15,9 @@ def runSQL(fileName):
     print(f"Done processing {fileName}")
 
 if __name__ == '__main__':
-    pool = Pool(processes=2)
+    pool = Pool(processes=5)
     sqlFolder = 'sql'
-    files = [sqlFolder + '/' + f for f in os.listdir(sqlFolder)]
+    files = [sqlFolder + '/' + f for f in os.listdir(sqlFolder) if f.endswith('.sql')]
     poolMap = pool.map_async(runSQL, files)
     print("Now we will wait...")
     while poolMap.ready() == False:

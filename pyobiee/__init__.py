@@ -44,7 +44,7 @@ class pyOBIEE:
             self.__XMLQueryExecutionOptions = self.__client.factory.create("XMLQueryExecutionOptions")
             self.__XMLQueryOutputFormat = self.__client.factory.create("XMLQueryOutputFormat")
 
-        self.__XMLQueryExecutionOptions.async = True
+        #self.__XMLQueryExecutionOptions.async = True
         self.__XMLQueryExecutionOptions.maxRowsPerPage = maxRowsPerPage
         self.__XMLQueryExecutionOptions.refresh = False
         self.__XMLQueryExecutionOptions.presentationInfo = False

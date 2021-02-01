@@ -52,10 +52,14 @@ class pyOBIEE:
     def Logout(self):
         return True
     
-    def Get(self, sqlFile, fileName=None):
+    def GetBySQLString(self, sqlString, fileName=None):
+        return self.Get(sqlFile=None, sqlString=sqlString, fileName=fileName)
+        
+    def Get(self, sqlFile, fileName=None, sqlString=None):
         if not self.LoggedIn:
             return False
-        sql = self.__readFile(sqlFile)
+
+        sql = self.__readFile(sqlFile) if sqlString is None else sqlString
         xmlData = self.__GetData(sql)
 
         if fileName == None:

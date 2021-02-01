@@ -5,7 +5,7 @@ def readme():
         return f.read()
         
 setup(name='pyobiee',
-      version='0.14',
+      version='0.15',
       description='Package that enables retrieving data from OBIEE using the webservice.',
       author='Halim Gökduman',
       author_email='halim@skewl.net',
